@@ -19,7 +19,7 @@ function ChatWidget() {
         let result = null
         try {
             // console.log("Input: ", input)
-            const response = await fetch("http://127.0.0.1:8000/chat", {
+            const response = await fetch("http://52.66.245.90:8000/chat", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -87,7 +87,7 @@ function ChatWidget() {
                             type="text"
                             value={input}
                             onChange={(e) => setInput(e.target.value)}
-                            placeholder="🧑‍🏭 Type your message..."
+                            placeholder="Type your message..."
                             className="message-input"
                         />
                         <button type="submit" className="send-button">
